@@ -1,0 +1,17 @@
+com\mycompany\smartcampus\exception\SensorUnavailableExceptionMapper.class
+com\mycompany\smartcampus\model\Room.class
+com\mycompany\smartcampus\resources\SensorResource.class
+com\mycompany\smartcampus\model\SensorReading.class
+com\mycompany\smartcampus\exception\RoomNotEmptyException.class
+com\mycompany\smartcampus\exception\SensorUnavailableException.class
+com\mycompany\smartcampus\exception\ErrorResponse.class
+com\mycompany\smartcampus\resources\RoomResource.class
+com\mycompany\smartcampus\filter\LoggingFilter.class
+com\mycompany\smartcampus\exception\LinkedResourceNotFoundException.class
+com\mycompany\smartcampus\exception\LinkedResourceNotFoundExceptionMapper.class
+com\mycompany\smartcampus\exception\GlobalExceptionMapper.class
+com\mycompany\smartcampus\exception\RoomNotEmptyExceptionMapper.class
+com\mycompany\smartcampus\MyApplication.class
+com\mycompany\smartcampus\resources\SensorReadingResource.class
+com\mycompany\smartcampus\resources\SmartCampusResource.class
+com\mycompany\smartcampus\model\Sensor.class
