@@ -36,45 +36,119 @@ This project implements a **RESTful API using JAX-RS (Jersey)** for managing a u
 
 ---
 
-##  How to Build & Run
+## 🚀 How to Build & Run (Using NetBeans + Apache Tomcat)
 
-###  Prerequisites
+### ✅ Prerequisites
 
-- Java JDK 11+
-- Maven installed
-- Git (optional)
+Before starting, ensure you have:
+
+- Java JDK 11 or higher installed
+- Apache NetBeans (latest version recommended)
+- Apache Tomcat (v9 or above)
+- Internet connection (to download Maven dependencies)
 
 ---
 
-###  Step 1: Clone the Repository
+### 📥 Step 1: Clone or Download the Project
 
+**Option A: Using Git**
 ```bash
 git clone https://github.com/your-username/smart-campus-api.git
-cd smart-campus-api
-```
-### ⚙️ Step 2: Build the Project
-```bash
-mvn clean install
-```
-###  Step 3: Run the Server
-
-If using an embedded server (e.g., Grizzly):
-```bash
-mvn exec:java
 ```
 
-Or if packaged as a WAR:
-```bash
-mvn package
-```
-Then deploy to a servlet container (e.g., Tomcat).
+**Option B: Download ZIP**
+- Download the repository as a `.zip`
+- Extract it to a folder on your machine
 
-Step 4: Access the API
+---
 
-Base URL:
-```bash
-http://localhost:8080/api/v1
+### 📂 Step 2: Open Project in NetBeans
+
+1. Open **NetBeans**
+2. Click **File → Open Project**
+3. Select the project folder
+4. Click **Open Project**
+
+> NetBeans will automatically detect it as a Maven project and begin downloading dependencies.
+
+---
+
+### ⚙️ Step 3: Configure Java Version
+
+1. Right-click the project → **Properties**
+2. Navigate to **Libraries → Java Platform**
+3. Select **JDK 11 or higher**
+4. Click **OK**
+
+---
+
+### 🖥️ Step 4: Add Apache Tomcat Server
+
+1. Go to **Services → Servers**
+2. Right-click → **Add Server**
+3. Choose **Apache Tomcat**
+4. Browse and select your Tomcat installation directory
+5. Click **Finish**
+
+---
+
+### 🔗 Step 5: Configure Project to Use Tomcat
+
+1. Right-click the project → **Properties**
+2. Go to **Run**
+3. Under **Server**, select your configured **Tomcat server**
+4. Ensure the **Context Path** is set (e.g., `/smart-campus-api`)
+5. Click **OK**
+
+---
+
+### ▶️ Step 6: Build the Project
+
+1. Right-click the project
+2. Click **Clean and Build**
+
+This will:
+- Compile the application
+- Resolve dependencies
+- Package it as a `.war` file
+
+---
+
+### ▶️ Step 7: Run the Application
+
+1. Right-click the project
+2. Click **Run**
+
+NetBeans will:
+- Deploy the `.war` file to Tomcat
+- Start the server automatically
+
+---
+
+### 🌐 Step 8: Access the API
+
+Once deployed, access the API at:
+
 ```
+http://localhost:8080/smart-campus-api/api/v1
+```
+
+> Replace `smart-campus-api` with your actual project context path if different.
+
+---
+
+### 🧪 Step 9: Test the API
+
+You can test using Postman or curl.
+
+Example:
+
+```bash
+curl -X GET http://localhost:8080/smart-campus-api/api/v1/rooms
+```
+
+---
+
 ### API Endpoints Summary
 
 | Resource  | Method | Endpoint                 | Description    |
